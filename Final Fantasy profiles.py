@@ -7,17 +7,47 @@ Created on Tue Jan 30 16:53:28 2018
 import random
 #Profiles
 #Fighter
-figHp = 35    
-figStr = random.randint(1, 15)
-figDex = random.randint(1, 14)
-figWis = random.randint(1, 8)
-figInt = random.randint(1, 12)
-figCon = random.randint(1, 13)
-figChr = random.randint(1, 10)
-print(str(figHp))
-print(str(figStr))
-print(str(figDex))
-print(str(figWis))
-print(str(figInt))
-print(str(figCon))
-print(str(figChr))
+class Fighter:
+    
+    global strength
+    global dexterity
+    global wisdom
+    global intelligence
+    global constitution
+    global charisma
+        
+    def setStr():
+        strength = random.randint(1, 15)
+        return strength
+    def getStr():
+        return strength
+    
+    def setDex():
+        dexterity = random.randint(1, 14)
+        return dexterity
+    def getDex():
+        return dexterity
+        
+    def setWis():
+        wisdom = random.randint(1, 8)
+        return wisdom
+    def getWis():
+        return wisdom
+        
+    def setInt():
+        intelligence = random.randint(1, 12)
+        return intelligence
+    def getInt():
+        return intelligence
+        
+    def setCon():
+        constitution = random.randint(1, 13)
+        return constitution
+    def getCon():
+        return constitution
+    
+    def setChr():
+        charisma = random.randint(1, 10)
+        return charisma
+    def getChr():
+        return charisma
