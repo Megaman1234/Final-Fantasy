@@ -22,13 +22,7 @@ print('each class has its own stregnth and weaknesses so choose wisely')
 input()
 choice = input   
 if choice == 'fighter':
-    figHp = 35    
-    figStr = random.randint(1, 15)
-    figDex = random.randint(1, 14)
-    figWis = random.randint(1, 8)
-    figInt = random.randint(1, 12)
-    figCon = random.randint(1, 13)
-    figChr = random.randint(1, 10)
+    return class Fighter
 #says player's stats
 playLv = '1'
 hP = 36
