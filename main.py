@@ -4,7 +4,10 @@ Created on Wed Jan 31 20:24:38 2018
 
 @author: jacob
 """
-from Fighter import Fighter
+
+from Profiles.Fighter import *
+from Profiles.Thief import *
+from Profiles.Mage import *
 #Charater creator
 print('Welome to Final Fantasy.py')
 print('lets create a character')
@@ -21,11 +24,14 @@ classChoice = input()
 createChoice = True
 while createChoice:
     if classChoice.upper() == 'F':
-        attributes = Fighter.create()    
+        F = Fighter()   
+        attributes = F.create()
     if classChoice.upper() == 'T':
-        attributes = Thief.create()
+        T = Thief()
+        attributes = T.create()
     if classChoice.upper() == 'M':
-        attributes = Mage.create        
+        M = Mage()
+        attributes = M.create()        
     print('strength = ' + str(attributes[0]))
     print('dexerity = ' + str(attributes[1]))
     print('wisdom = ' + str(attributes[2]))
@@ -33,6 +39,8 @@ while createChoice:
     print('constitution = ' + str(attributes[4]))
     print('charisma = ' + str(attributes[5]))
     createChoice = input('do you want to reroll Y/N? ')
-    if createChoice.upper() == 'n':
-        createChoice = False
+if createChoice.upper() == 'n':
+    createChoice = False
+
+    
         

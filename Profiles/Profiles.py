@@ -4,8 +4,10 @@ Created on Tue Jan 30 18:26:24 2018
 
 @author: jacob
 """
-import random
+
 from Fighter import Fighter
+from Thief import Thief
+from Mage import Mage
 
 class Profiles:
     def __init__(self):
@@ -66,140 +68,8 @@ class Attributes:
 class Gender:
     None
         
-class Thief:
-    
-    maxStr = 10
-    minStr = 1
-    maxDex = 15
-    minDex = 1
-    maxWis = 8
-    minWis = 1
-    maxInt = 14
-    minInt = 1
-    maxCon = 13
-    minCon = 1
-    maxChar = 12
-    minChar = 1
-    
-    strength = 0
-    dexterity = 0
-    wisdom = 0
-    intelligence = 0
-    constitution = 0
-    charisma = 0
-        
-    def setStr(minStr=minStr, maxStr=maxStr):
-        global strength 
-        strength= random.randint(minStr, maxStr)
 
-    def getStr():
-        return strength
-    
-    def setDex(minDex=minDex, maxDex=maxDex):
-        global dexterity        
-        dexterity = random.randint(minDex, maxDex)
-    def getDex():
-        return dexterity
         
-    def setWis(minWis=minWis, maxWis=maxWis):
-        global wisdom        
-        wisdom = random.randint(min, 8)
-    def getWis():
-        return wisdom
-        
-    def setInt(minInt=minInt, maxInt=maxInt):
-        global intelligence  
-        intelligence = random.randint(1, 12)
-    def getInt():
-        return intelligence
-        
-    def setCon(minCon=minCon, maxCon=maxCon):
-        global constitution
-        constitution = random.randint(1, 13)
-    def getCon():
-        return constitution
-    
-    def setChr(minChar=minChar, maxChar=maxChar):
-        global charisma
-        charisma = random.randint(1, 10)
-    def getChr():
-        return charisma
 
-    def create():
-        Thief.setStr()
-        Thief.setDex()
-        Thief.setWis()
-        Thief.setInt()
-        Thief.setCon()
-        Thief.setChr()        
-        return [strength, dexterity, wisdom, intelligence, constitution, charisma]
-        
-class Mage:
-    
-    maxStr = 10
-    minStr = 1
-    maxDex = 12
-    minDex = 1
-    maxWis = 14
-    minWis = 1
-    maxInt = 15
-    minInt = 1
-    maxCon = 13
-    minCon = 1
-    maxChar = 8
-    minChar = 1
-    
-    strength = 0
-    dexterity = 0
-    wisdom = 0
-    intelligence = 0
-    constitution = 0
-    charisma = 0
-        
-    def setStr(minStr=minStr, maxStr=maxStr):
-        global strength 
-        strength= random.randint(minStr, maxStr)
-
-    def getStr():
-        return strength
-    
-    def setDex(minDex=minDex, maxDex=maxDex):
-        global dexterity        
-        dexterity = random.randint(1, 14)
-    def getDex():
-        return dexterity
-        
-    def setWis(minWis=minWis, maxWis=maxWis):
-        global wisdom        
-        wisdom = random.randint(1, 8)
-    def getWis():
-        return wisdom
-        
-    def setInt(minInt=minInt, maxInt=maxInt):
-        global intelligence  
-        intelligence = random.randint(1, 12)
-    def getInt():
-        return intelligence
-        
-    def setCon(minCon=minCon, maxCon=maxCon):
-        global constitution
-        constitution = random.randint(1, 13)
-    def getCon():
-        return constitution
-    
-    def setChr(minChar=minChar, maxChar=maxChar):
-        global charisma
-        charisma = random.randint(1, 10)
-    def getChr():
-        return charisma
-
-    def create():
-        Mage.setStr()
-        Mage.setDex()
-        Mage.setWis()
-        Mage.setInt()
-        Mage.setCon()
-        Mage.setChr()        
-        return [strength, dexterity, wisdom, intelligence, constitution, charisma]
         
         
